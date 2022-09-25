@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
+  list-style: none;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(29, 28, 28);
+  margin-top: 0;
+  height: 70px;
+  color: whitesmoke;
+}
+.nav > li:hover {
+  color: blue;
+}
+.productsContainer {
+  display: flex;
+}
+.add,
+.remove {
+  background-color: rgb(17, 130, 51);
   color: white;
+  padding: 5px;
+  width: 300px;
+  border-radius: 0.5rem;
+  margin-top: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.remove {
+  background-color: rgb(190, 36, 16);
+  margin-top: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  border-radius: 0.5rem;
+  width: 70%;
+}
+.singleProduct {
+  border: 1px solid grey;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 310px;
+  height: 300px;
+  padding: 2px;
+  word-break: keep-all;
+}
+.prodDesc {
+  margin-top: 30px;
+}
+.prodImg {
+  width: 300px;
+  height: 150px;
+  border: 1px solid black;
+}
+.cartImg {
+  /* border: 1px solid grey; */
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 150px;
+  height: 100px;
+  padding: 2px;
+  word-break: keep-all;
+}
+.qtyAddBtn,
+.qtyRemoveBtn {
+  border: 1px solid grey;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
